@@ -1,0 +1,8 @@
+.parallax{
+    background-image: url(https://imgs.search.brave.com/dgpF9rjgZEBnlEsixGXK5qFhEJn_j_XaAO9MRLTxijc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ldy5j/b20vdGhtYi9XeGJ2/a2ljZ2s0dU5nM0ZO/S1Y0cGZJV05JWnM9/LzIwMDB4MC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKTpm/b3JtYXQod2VicCkv/Umljay1hbmQtTW9y/dHktNjA1LTEwMTMy/My0zMWNiMTZjNWVj/OTg0NzJhOTM3NDQy/NjM1MGM5YzkxOS5q/cGc);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

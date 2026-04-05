@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="balloon.css">
+    <script src="balloon.js"></script>
+</head>
+
+<body>
+    <div class="balloon">
+    </div>
+
+    <!-- JSSSS -->
+    <script>
+        const balloon = document.querySelector('.balloon');
+
+        let colorIndex = 0;
+        const colors = ["red", "green", "blue"];
+
+        balloon.onclick = function () {
+            let width = balloon.offsetWidth; 420
+            let height = balloon.offsetHeight;
+            
+
+
+            width += 10;
+            height += 10;
+
+
+            if (width > 420) {
+                width = 200;
+                height = 200;
+                colorIndex = 0;
+            } else {
+                colorIndex = (colorIndex + 1) % 3;
+            }
+
+            balloon.style.width = width + "px";
+            balloon.style.height = height + "px";
+            balloon.style.backgroundColor = colors[colorIndex];
+        };
+
+        balloon.onmouseleave = function () {
+            let width = balloon.offsetWidth;
+            let height = balloon.offsetHeight;
+
+
+            width = Math.max(200, width - 5);
+            height = Math.max(200, height - 5);
+
+            colorIndex = (colorIndex - 1 + 3) % 3;
+
+            balloon.style.width = width + "px";
+            balloon.style.height = height + "px";
+            balloon.style.backgroundColor = colors[colorIndex];
+        };
+    </script>
+</body>
+
+</html>

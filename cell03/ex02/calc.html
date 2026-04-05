@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src = "calc.js"></script>
+</head>
+
+<body>
+    <form>
+        <label for="fname">Calculate:</label><br>
+        <input type="number" id="fname" name="fname"><br>
+    </form>
+    <hr>
+    <select id = "operator">
+        <option value="+">+</option>
+        <option value="-">-</option> 
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <hr>
+    <form>
+        <input type="number" id="lname" name="lname"><br>
+        <hr>
+        <button type="button" onclick="caculate()" >submit</button>
+    </form>
+</body>
+
+</html>
